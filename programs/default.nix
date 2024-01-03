@@ -3,9 +3,9 @@
 {
   imports = [
     #./nvim
-    ./bash
-    ./zsh
+    #./bash
+    #./zsh
     ./kitty
-    ./starship
+    #./starship
   ];
 }
