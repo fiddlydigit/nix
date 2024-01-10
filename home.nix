@@ -17,13 +17,15 @@ in
     ranger
     xclip
     zip
+    kitty
     unzip
     google-chrome
     distrobox
     nano
+    tmux
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-  ];
-  
+  ]; 
+
   home.sessionVariables = {
     EDITOR = "nvim";
   };

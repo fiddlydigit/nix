@@ -4,8 +4,8 @@
   imports = [
     #./nvim
     #./bash
-    #./zsh
-    ./kitty
+    ./zsh
+    #./kitty
     #./starship
   ];
 }
