@@ -13,18 +13,6 @@ in
     enable = true;
     vimAlias = true;
     coc.enable = false;
-    extraPackages = with pkgs; [
-       ripgrep
-       fd
-       nil
-       rustc
-       cargo
-       lua-language-server
-    ];
-    plugins = with pkgs.vimPlugins; [
-      lazy-nix-helper-nvim
-      lazy-nvim
-    ];
   };
  
 }

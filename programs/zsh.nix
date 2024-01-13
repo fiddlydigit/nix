@@ -15,7 +15,6 @@
     zplug = {
       enable = false;
       plugins = [ 
-         { name = "TBSliver/zsh-plugin-tmux-simple"; }
         /* { name = "victoria-riley-barnett/Communism"; } */
       ];
     };

@@ -2,8 +2,7 @@
 
 {
   imports = [
-    #./nvim
-    #./bash
+    ./nvim
     ./zsh.nix
     ./starship.nix
   ];
