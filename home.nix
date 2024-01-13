@@ -23,8 +23,30 @@ in
     distrobox
     nano
     tmux
+    foot
+    alacritty
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ]; 
+  
+xdg = {
+  enable = true;
+  desktopEntries = {
+    "terminal-tmux" = {
+      name = "Terminal with Tmux";
+      exec = "foot -e \"zsh -c 'tmux'\"";
+      icon = "utilities-terminal";
+      #categories = "Utility;TerminalEmulator;";
+    };
+  };
+}; 
+
+  dconf.settings = {
+   "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+        name = "terminal";
+        command = "zsh";
+        binding = "<Super>t";
+      };
+ };
 
   home.sessionVariables = {
     EDITOR = "nvim";
