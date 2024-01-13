@@ -4,7 +4,10 @@ let
 in
 
 {
-  imports = [ ./programs ];
+  imports = [ 
+    ./programs
+    ./dconf/gnome.nix
+  ];
   home.file = import ./programs/dotfiles.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
@@ -29,16 +32,18 @@ in
     tmux
     foot
     neovim
+
+    dotnet-sdk_7
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ]; 
 
-  dconf.settings = {
-   "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-        name = "terminal";
-        command = "kitty";
-        binding = "<Super>t";
-      };
- };
+ #  dconf.settings = {
+ #   "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+ #        name = "terminal";
+ #        command = "kitty";
+ #        binding = "<Super>t";
+ #      };
+ # };
 
   home.shellAliases = {
     g = "git";
