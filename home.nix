@@ -31,26 +31,15 @@ in
     neovim
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ]; 
-  
-xdg = {
-  enable = true;
-  desktopEntries = {
-    "terminal-tmux" = {
-      name = "Terminal with Tmux";
-      exec = "foot -e \"zsh -c 'tmux'\"";
-      icon = "utilities-terminal";
-      #categories = "Utility;TerminalEmulator;";
-    };
-  };
-}; 
 
   dconf.settings = {
    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
         name = "terminal";
-        command = "zsh";
+        command = "kitty";
         binding = "<Super>t";
       };
  };
+
   home.shellAliases = {
     g = "git";
     lg = "lazygit";
