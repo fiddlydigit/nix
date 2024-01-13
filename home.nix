@@ -6,11 +6,12 @@ in
 {
   imports = [ 
     ./programs
-    ./dconf/gnome.nix
+    ./gnome/shortcuts.nix
   ];
   home.file = import ./programs/dotfiles.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
+    SHELL = "/home/sasha/.nix-profile/bin/zsh";
   };
   home.username = "sasha";
   home.homeDirectory = "/home/sasha";
@@ -37,13 +38,6 @@ in
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ]; 
 
- #  dconf.settings = {
- #   "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
- #        name = "terminal";
- #        command = "kitty";
- #        binding = "<Super>t";
- #      };
- # };
 
   home.shellAliases = {
     g = "git";
@@ -73,7 +67,18 @@ in
     gm = "git merge";
     gf = "git fetch";
   };
-
+dconf.settings = {
+  "org/gnome/settings-daemon/plugins/media-keys" = {
+    custom-keybindings = [
+      "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+    ];
+  };
+  "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+    binding = "<super>t";
+    command = "kitty";
+    name = "open-terminal";
+  };
+};
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
