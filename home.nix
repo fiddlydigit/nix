@@ -5,7 +5,7 @@ in
 
 {
   imports = [ ./programs ];
-  #home.file = import ./programs/dotfiles.nix;
+  home.file = import ./programs/dotfiles.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
   };
@@ -22,7 +22,6 @@ in
     zip
     lazygit
     neofetch
-    kitty
     unzip
     google-chrome
     distrobox
