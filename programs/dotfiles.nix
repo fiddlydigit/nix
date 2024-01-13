@@ -1,10 +1,6 @@
 {
-  test = import ./test.nix;
-  ".config/ranger/rc.conf" = {
-    text = ''
-      map S shell $SHELL -c "cd %d ; zsh"
-    '';
-  };
+  ".config/ranger/rcss.conf" = import ./test.nix;
+  ".config/ranger/rc.conf" = import ./dotfiles/ranger_rc.nix;
   ".config/ranger/rifle.conf" =
   {
       text = ''
