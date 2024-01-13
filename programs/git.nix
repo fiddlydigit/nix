@@ -7,7 +7,6 @@
     userEmail = "fiddlydigit@gmail.com";
 
     extraConfig = {
-      user = { email = "alexandr.baranovschi@gmail.com"; };
       core = { sshCommand = "ssh -i ~/.ssh/ssh_msi"; };
     };
 
