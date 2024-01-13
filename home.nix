@@ -5,7 +5,10 @@ in
 
 {
   imports = [ ./programs ];
-  home.file = { };
+  #home.file = import ./programs/dotfiles.nix;
+  home.sessionVariables = {
+    EDITOR = "nvim";
+  };
   home.username = "sasha";
   home.homeDirectory = "/home/sasha";
   home.stateVersion = "23.11"; # Please read the comment before changing.
@@ -17,6 +20,8 @@ in
     ranger
     xclip
     zip
+    lazygit
+    neofetch
     kitty
     unzip
     google-chrome
@@ -24,7 +29,7 @@ in
     nano
     tmux
     foot
-    alacritty
+    neovim
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ]; 
   
@@ -47,9 +52,33 @@ xdg = {
         binding = "<Super>t";
       };
  };
-
-  home.sessionVariables = {
-    EDITOR = "nvim";
+  home.shellAliases = {
+    g = "git";
+    lg = "lazygit";
+    # add
+    ga = "git add";
+    gaa = "git add *";
+    # commit
+    gc = "git commit";
+    gcm = "git commit -m";
+    gca = "git commit -am";
+    # pull/push
+    gpl = "git pull";
+    gps = "git push";
+    gs = "git status";
+    gd = "git diff";
+    gch = "git checkout";
+    gnb = "git checkout -b";
+    gac = "git add . && git commit";
+    grs = "git restore --staged .";
+    gre = "git restore";
+    gr = "git remote";
+    gcl = "git clone";
+    gt = "git ls-tree -r master --name-only";
+    gb = "git branch";
+    gbl = "git branch --list";
+    gm = "git merge";
+    gf = "git fetch";
   };
 
   # Let Home Manager install and manage itself.
