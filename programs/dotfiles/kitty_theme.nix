@@ -22,4 +22,4 @@
    color15 #fffefe
    selection_foreground #1d1f21
   '';
-};
+}
