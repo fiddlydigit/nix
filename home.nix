@@ -31,54 +31,10 @@ in
     distrobox
     nano
     tmux
-    foot
     neovim
-
     dotnet-sdk_7
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ]; 
-
-
-  home.shellAliases = {
-    g = "git";
-    lg = "lazygit";
-    # add
-    ga = "git add";
-    gaa = "git add *";
-    # commit
-    gc = "git commit";
-    gcm = "git commit -m";
-    gca = "git commit -am";
-    # pull/push
-    gpl = "git pull";
-    gps = "git push";
-    gs = "git status";
-    gd = "git diff";
-    gch = "git checkout";
-    gnb = "git checkout -b";
-    gac = "git add . && git commit";
-    grs = "git restore --staged .";
-    gre = "git restore";
-    gr = "git remote";
-    gcl = "git clone";
-    gt = "git ls-tree -r master --name-only";
-    gb = "git branch";
-    gbl = "git branch --list";
-    gm = "git merge";
-    gf = "git fetch";
-  };
-dconf.settings = {
-  "org/gnome/settings-daemon/plugins/media-keys" = {
-    custom-keybindings = [
-      "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
-    ];
-  };
-  "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-    binding = "<super>t";
-    command = "kitty";
-    name = "open-terminal";
-  };
-};
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
