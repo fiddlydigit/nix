@@ -1,3 +1,6 @@
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
 local options = {
   hlsearch = false,
   mouse = 'a',
@@ -11,6 +14,12 @@ local options = {
   timeoutlen = 300,
   completeopt = 'menuone,noselect',
   termguicolors = true,
+  --
+  tabstop = 4,
+  softtabstop = 4,
+  shiftwidth = 4,
+  expandtab = true,
+  --
 }
 
 for k, v in pairs(options) do

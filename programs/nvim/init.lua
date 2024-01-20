@@ -1,6 +1,5 @@
 require 'options'
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+require 'mappings'
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
@@ -16,10 +15,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
-  'tpope/vim-fugitive',
-  'tpope/vim-rhubarb',
-  'tpope/vim-sleuth',
-  'simrat39/rust-tools.nvim',
+  'tpope/vim-fugitive',       --Git
+  'tpope/vim-sleuth',         --Keeps indenation style
+  'simrat39/rust-tools.nvim', --Rust
   { 'folke/which-key.nvim',                opts = {} },
   { 'm4xshen/autoclose.nvim',              opts = {} },
   { 'numToStr/Comment.nvim',               opts = {} },
@@ -28,7 +26,6 @@ require('lazy').setup {
     dependencies = {
       { 'williamboman/mason.nvim', config = true },
       'williamboman/mason-lspconfig.nvim',
-      -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
       { 'j-hui/fidget.nvim',       tag = 'legacy', opts = {} },
       'folke/neodev.nvim',
     },
@@ -84,7 +81,6 @@ require('lazy').setup {
   },
   require 'plugins.autoformat',
   require 'plugins.debug',
-  
   {},
 }
 
@@ -95,4 +91,3 @@ require('plugins.lsp-config')
 require('plugins.random-config')
 require('plugins.cmp-config')
 require('plugins.rust-tools-config')
-require('keymaps')
