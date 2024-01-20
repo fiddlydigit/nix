@@ -15,25 +15,24 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
-    'tpope/vim-fugitive',       --Git
-    'tpope/vim-sleuth',         --Keeps indenation style
-    'simrat39/rust-tools.nvim', --Rust
-    { 'folke/which-key.nvim',                opts = {} },
-    { 'm4xshen/autoclose.nvim',              opts = {} },
-    { 'numToStr/Comment.nvim',               opts = {} },
-    { 'lukas-reineke/indent-blankline.nvim', main = 'ibl',                                       opts = {}, },
+    'tpope/vim-fugitive',          --Git
+    'tpope/vim-sleuth',            --Keeps indenation style
+    'simrat39/rust-tools.nvim',    --Rust
+    { 'folke/which-key.nvim', },   --Mappings cheatsheet
+    { 'm4xshen/autoclose.nvim', }, --Brackets and such
+    { 'numToStr/Comment.nvim', },
+    { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', },
     { 'neovim/nvim-lspconfig',               dependencies = require('plugins.dependencies.lsp'), },
     { 'hrsh7th/nvim-cmp',                    dependencies = require('plugins.dependencies.cmp'), },
-    { 'lewis6991/gitsigns.nvim', },
+    --{ 'lewis6991/gitsigns.nvim', },
+    require 'plugins.configs.gitsigns',
     { 'nvim-telescope/telescope.nvim',       branch = '0.1.x',                                   dependencies = require('plugins.dependencies.telescope'), },
     { 'nvim-treesitter/nvim-treesitter',
         dependencies = { 'nvim-treesitter/nvim-treesitter-textobjects', },
         build = ':TSUpdate',
     },
-
     require 'plugins.configs.theme',
     require 'plugins.configs.lualine',
-    --{ 'nvim-lualine/lualine.nvim', opts = require('plugins.configs.lualine') },
     require 'plugins.configs.autoformat',
     require 'plugins.configs.debug',
     {},
@@ -46,4 +45,4 @@ require('plugins.configs.lsp')
 require('plugins.configs.random')
 require('plugins.configs.cmp')
 require('plugins.configs.rust-tools')
-require('plugins.configs.gitsigns')
+-- require('plugins.configs.gitsigns')

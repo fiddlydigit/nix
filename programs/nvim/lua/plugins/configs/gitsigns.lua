@@ -1,7 +1,6 @@
-local M = {}
-
-M.setup = function()
-  require('gitsigns').setup {
+return {
+  { 'lewis6991/gitsigns.nvim', },
+  opts = {
     signs = {
       add = { text = '+' },
       change = { text = '~' },
@@ -25,6 +24,4 @@ M.setup = function()
       end, { expr = true, buffer = bufnr, desc = "Jump to previous hunk" })
     end,
   }
-end
-
-return M
+}
