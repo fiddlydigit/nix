@@ -25,13 +25,7 @@ require('lazy').setup {
     { 'neovim/nvim-lspconfig',               dependencies = require('plugins.dependencies.lsp'), },
     { 'hrsh7th/nvim-cmp',                    dependencies = require('plugins.dependencies.cmp'), },
     { 'lewis6991/gitsigns.nvim', },
-    { 'RRethy/nvim-base16',
-        name = 'mycolor',
-        priority = 1000,
-        config = function()
-            vim.cmd.colorscheme 'base16-tomorrow-night'
-        end,
-    },
+    { 'RRethy/nvim-base16', },
     { 'nvim-lualine/lualine.nvim',
         opts = {
             options = {
@@ -74,3 +68,4 @@ require('plugins.configs.random')
 require('plugins.configs.cmp')
 require('plugins.configs.rust-tools')
 require('plugins.configs.gitsigns')
+require('plugins.configs.theme')
