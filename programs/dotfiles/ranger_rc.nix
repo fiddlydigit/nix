@@ -1,5 +1,5 @@
 {
     text = ''
-      map S shell $SHELL -c "cd %d ; zsh"
+      map S shell $SHELL
     '';
 }

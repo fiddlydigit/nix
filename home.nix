@@ -11,7 +11,6 @@ in
   home.file = import ./programs/dotfiles.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
-    SHELL = "/home/sasha/.nix-profile/bin/zsh";
   };
   home.username = "sasha";
   home.homeDirectory = "/home/sasha";
@@ -23,6 +22,7 @@ in
     xclip
     zip
     neofetch
+    neovim
     unzip
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ]; 
