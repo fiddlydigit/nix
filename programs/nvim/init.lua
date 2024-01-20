@@ -32,8 +32,8 @@ require('lazy').setup {
     },
 
     require 'plugins.configs.theme',
-
-    { 'nvim-lualine/lualine.nvim', opts = require('plugins.configs.lualine') },
+    require 'plugins.configs.lualine',
+    --{ 'nvim-lualine/lualine.nvim', opts = require('plugins.configs.lualine') },
     require 'plugins.configs.autoformat',
     require 'plugins.configs.debug',
     {},

@@ -1,4 +1,5 @@
 return {
+  'nvim-lualine/lualine.nvim',
   options = {
     icons_enabled = true,
     theme = 'base16',
