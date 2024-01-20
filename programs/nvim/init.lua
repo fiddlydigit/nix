@@ -40,7 +40,7 @@ require('lazy').setup {
   },
   { 'lewis6991/gitsigns.nvim',
     opts = function()
-      require('plugins.gitsigns-config').setup()
+      require('plugins.configs.gitsigns').setup()
     end,
   },
   { 'RRethy/nvim-base16',
@@ -84,10 +84,10 @@ require('lazy').setup {
   {},
 }
 
-require('plugins.telescope-config')
-require('plugins.treesitter-config')
-require('plugins.whichkey-config')
-require('plugins.lsp-config')
-require('plugins.random-config')
-require('plugins.cmp-config')
-require('plugins.rust-tools-config')
+require('plugins.configs.telescope')
+require('plugins.configs.treesitter')
+require('plugins.configs.whichkey')
+require('plugins.configs.lsp')
+require('plugins.configs.random')
+require('plugins.configs.cmp')
+require('plugins.configs.rust-tools')
