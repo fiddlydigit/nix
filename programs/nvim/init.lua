@@ -23,15 +23,10 @@ require('lazy').setup {
   { 'numToStr/Comment.nvim',               opts = {} },
   { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {}, },
   { 'neovim/nvim-lspconfig',
-    dependencies = {
-      { 'williamboman/mason.nvim', config = true },
-      'williamboman/mason-lspconfig.nvim',
-      { 'j-hui/fidget.nvim',       tag = 'legacy', opts = {} },
-      'folke/neodev.nvim',
-    },
+    dependencies = require('plugins.dependencies.lsp'),
   },
   { 'hrsh7th/nvim-cmp',
-    dependencies = require('plugins.dependencies.lsp'),
+    dependencies = require('plugins.dependencies.cmp'),
   },
   { 'lewis6991/gitsigns.nvim',
     opts = function()
