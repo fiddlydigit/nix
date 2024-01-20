@@ -31,12 +31,7 @@ require('lazy').setup {
     },
   },
   { 'hrsh7th/nvim-cmp',
-    dependencies = {
-      'L3MON4D3/LuaSnip',             -- Snippet Engine & its associated nvim-cmp source
-      'saadparwaiz1/cmp_luasnip',
-      'hrsh7th/cmp-nvim-lsp',         -- Adds LSP completion capabilities
-      'rafamadriz/friendly-snippets', -- Adds a number of user-friendly snippets
-    },
+    dependencies = require('plugins.dependencies.lsp'),
   },
   { 'lewis6991/gitsigns.nvim',
     opts = function()
@@ -79,8 +74,8 @@ require('lazy').setup {
     },
     build = ':TSUpdate',
   },
-  require 'plugins.autoformat',
-  require 'plugins.debug',
+  require 'plugins.configs.autoformat',
+  require 'plugins.configs.debug',
   {},
 }
 
