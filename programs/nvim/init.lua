@@ -25,23 +25,15 @@ require('lazy').setup {
     { 'neovim/nvim-lspconfig',               dependencies = require('plugins.dependencies.lsp'), },
     { 'hrsh7th/nvim-cmp',                    dependencies = require('plugins.dependencies.cmp'), },
     { 'lewis6991/gitsigns.nvim', },
-    { 'RRethy/nvim-base16',
-        name = 'mycolor',
-        priority = 1000,
-        config = function()
-            vim.cmd.colorscheme 'base16-tomorrow-night'
-        end,
-    },
-    { 'nvim-lualine/lualine.nvim', opts = require('plugins.configs.lualine') },
-    { 'nvim-telescope/telescope.nvim',
-        branch = '0.1.x',
-        dependencies = require('plugins.dependencies.telescope'), },
+    { 'nvim-telescope/telescope.nvim',       branch = '0.1.x',                                   dependencies = require('plugins.dependencies.telescope'), },
     { 'nvim-treesitter/nvim-treesitter',
-        dependencies = {
-            'nvim-treesitter/nvim-treesitter-textobjects',
-        },
+        dependencies = { 'nvim-treesitter/nvim-treesitter-textobjects', },
         build = ':TSUpdate',
     },
+
+    require 'plugins.configs.theme',
+
+    { 'nvim-lualine/lualine.nvim', opts = require('plugins.configs.lualine') },
     require 'plugins.configs.autoformat',
     require 'plugins.configs.debug',
     {},
