@@ -1,6 +1,6 @@
 return {
   'nvim-lualine/lualine.nvim',
-  options = {
+  ops = {
     icons_enabled = true,
     theme = 'base16',
     component_separators = '|',
