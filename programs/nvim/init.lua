@@ -26,5 +26,5 @@ require('lazy').setup({
     {},
 })
 
---require('plugins.configs.whichkey')
+
 require('plugins.configs.lsp')
