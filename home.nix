@@ -11,6 +11,7 @@ in
   home.file = import ./programs/dotfiles.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
+    SHELL = "zsh";
   };
   home.username = "sasha";
   home.homeDirectory = "/home/sasha";
