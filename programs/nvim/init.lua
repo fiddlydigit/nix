@@ -14,7 +14,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require('lazy').setup {
+require('lazy').setup({
     { 'tpope/vim-fugitive', },                                          -- Git
     { 'tpope/vim-sleuth', },                                            -- Keeps indenation style
     { 'folke/which-key.nvim',                opts = {} },               -- Mappings cheatsheet
@@ -23,16 +23,8 @@ require('lazy').setup {
     --
     { import = 'plugins' },
 
-    require 'plugins.configs.gitsigns',
-    require 'plugins.configs.theme',
-    require 'plugins.configs.lualine',
-    --require 'plugins.configs.autoformat',
-    require 'plugins.configs.debug',
     {},
-}
+})
 
-require('plugins.configs.telescope')
-require('plugins.configs.treesitter')
 require('plugins.configs.whichkey')
 require('plugins.configs.lsp')
-require('plugins.configs.cmp')

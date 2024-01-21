@@ -34,6 +34,7 @@ end
 
 -- Enable the following language servers
 local servers = {
+  rust_analyzer = {},
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
