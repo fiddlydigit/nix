@@ -1,8 +1,8 @@
 return {
-  'RRethy/nvim-base16',
+  'aktersnurra/no-clown-fiesta.nvim',
   name = 'mycolor',
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme 'base16-tomorrow-night'
+    vim.cmd.colorscheme 'no-clown-fiesta'
   end,
 }

@@ -1,9 +1,8 @@
 {
   text = ''
    #: The basic colors
-
-foreground              #cecece
-background              #0e1415
+   foreground #E1E1E1
+   background #151515
 
 selection_foreground    #cecece
 selection_background    #293334
