@@ -1,5 +1,6 @@
 {
   text = ''
+    shell /home/sasha/.nix-profile/bin/zsh
     # BEGIN_KITTY_THEME
     # Tomorrow Night
     include current-theme.conf
@@ -28,6 +29,7 @@
     url_color #0087bd
     url_style dotted
     window_padding_width 5
+    background_opacity 1.0
 
     map ctrl+alt+enter launch --cwd=current
     map ctrl+shift+down previous_window
