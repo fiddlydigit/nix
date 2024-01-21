@@ -21,10 +21,11 @@ require('lazy').setup {
     { 'numToStr/Comment.nvim',               opts = {} },               -- Comments
     { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} }, -- Indenation
     --
-    require 'plugins.lsp',                                              -- Language servers
-    require 'plugins.completion',                                       -- Completion
-    require 'plugins.telescope',
-    require 'plugins.treesitter',
+    "plugins",
+    -- require 'plugins.lsp',                                              -- Language servers
+    -- require 'plugins.completion',                                       -- Completion
+    -- require 'plugins.telescope',
+    -- require 'plugins.treesitter',
     --
     require 'plugins.configs.gitsigns',
     require 'plugins.configs.theme',
