@@ -16,14 +16,14 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
     { 'tpope/vim-fugitive', },                                          -- Git
-    { 'tpope/vim-sleuth', },                                 -- Keeps indenation style
+    { 'tpope/vim-sleuth', },                                            -- Keeps indenation style
     { 'folke/which-key.nvim',                opts = {} },               -- Mappings cheatsheet
     { 'numToStr/Comment.nvim',               opts = {} },               -- Comments
     { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} }, -- Indenation
     --
     { import = 'plugins' },
 
-      require 'plugins.configs.gitsigns',
+    require 'plugins.configs.gitsigns',
     require 'plugins.configs.theme',
     require 'plugins.configs.lualine',
     --require 'plugins.configs.autoformat',
