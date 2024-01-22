@@ -4,13 +4,12 @@
     enableAutosuggestions = true;
     enableCompletion = true;
     shellAliases = {
-      grep = "grep --color=auto";
+      # misc
       cp = "cp -i";
       mv = "mv -i";
       rm = "rm -i";
-      # Cool aliases
-      rebuild = "home-manager switch --flake /home/sasha/Github/nix";
-      # GIT
+      rebuild = "home-manager switch --flake /home/sasha/Github/nix#$(whoami)";
+      # git
       g = "git";
       lg = "lazygit";
        # add
