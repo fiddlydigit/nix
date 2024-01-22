@@ -24,7 +24,7 @@
         "sasha" = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           
-          modules = [ ./homes/sasha.nix ];
+          modules = [ ./homes/sasha/home.nix ];
 
           # Optionally use extraSpecialArgs
           # to pass through arguments to home.nix

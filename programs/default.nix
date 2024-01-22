@@ -3,7 +3,7 @@
 {
   imports = [
     ./nvim.nix
-    ./git.nix
+    #./git.nix
     ./zsh.nix
   ];
 }
