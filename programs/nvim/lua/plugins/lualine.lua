@@ -3,7 +3,7 @@ return {
   opts = {
     options = {
       icons_enabled = true,
-      theme = 'base16',
+      theme = 'no-clown-fiesta',
       component_separators = '|',
       section_separators = '',
     },

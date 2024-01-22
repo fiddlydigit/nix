@@ -1,70 +1,52 @@
 {
   text = ''
+
    #: The basic colors
    foreground #E1E1E1
    background #151515
 
-selection_foreground    #cecece
-selection_background    #293334
+   selection_foreground    #cecece
+   selection_background    #293334
 
+   #: Cursor colors
+   cursor                  #D0D0D0
+   cursor_text_color       #151515
 
-#: Cursor colors
+   #: URL underline color when hovering with mouse
+   url_color               #cd974b
 
-cursor                  #cd974b
-cursor_text_color       #000000
+   #: The basic 16 colors
+   #: black
+   color0                  #000000
+   color8                  #777777
 
+   #: red
+   color1                  #b46958
+   color9                  #201919
 
-#: URL underline color when hovering with mouse
+   #: green
+   color2                  #90A959
+   color10                 #90A959
 
-url_color               #cd974b
+   #: yellow
+   color3                  #F4BF75
+   color11                 #f0bf7a
 
+   #: blue
+   color4                  #BAD7FF
+   color12                 #7E97AB
 
-#: The basic 16 colors
+   #: magenta
+   color5                  #AA759F
+   color13                 #e987e9
 
-#: black
-color0                  #000000
-color8                  #777777
+   #: cyan
+   color6                  #88afa2
+   color14                 #4ac9e2
+   
+   #: white
+   color7                  #E1E1E1
+   color15                 #ffffff
 
-#: red
-color1                  #e25d56
-color9                  #f36868
-
-#: green
-color2                  #73ca50
-color10                 #88db3f
-
-#: yellow
-color3                  #e9bf57
-color11                 #f0bf7a
-
-#: blue
-color4                  #4a88e4
-color12                 #6f8fdb
-
-#: magenta
-color5                  #915caf
-color13                 #e987e9
-
-#: cyan
-color6                  #23acdd
-color14                 #4ac9e2
-
-#: white
-color7                  #cecece
-color15                 #ffffff
-
-
-#: kitty window border colors and terminal bell colors
-
-active_border_color             #777777
-inactive_border_color           #323738
-bell_border_color               #e97e57
-
-
-#: Tab bar colors
-
-active_tab_foreground           #cecece
-active_tab_background           #0e1415
-inactive_tab_foreground         #b8b8b8
-inactive_tab_background         #323738  '';
+'';
 }

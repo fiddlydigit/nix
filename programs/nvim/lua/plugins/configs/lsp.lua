@@ -35,6 +35,12 @@ end
 -- Enable the following language servers
 local servers = {
   rust_analyzer = {},
+  omnisharp = {
+    enable_roslyn_analysers = true,
+    enable_import_completion = true,
+    organize_imports_on_format = true,
+    filetypes = { 'cs', 'vb', 'csproj', 'sln', 'slnx', 'props' },
+  },
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },

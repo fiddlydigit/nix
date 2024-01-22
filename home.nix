@@ -25,6 +25,8 @@ in
     neofetch
     neovim
     unzip
+    fzf
+    ripgrep
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ]; 
   # Let Home Manager install and manage itself.

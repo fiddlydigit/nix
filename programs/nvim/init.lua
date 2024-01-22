@@ -15,6 +15,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+    {
+        'aktersnurra/no-clown-fiesta.nvim',
+        name = 'Theme',
+        priority = 1000,
+        config = function()
+            vim.cmd.colorscheme 'no-clown-fiesta'
+        end,
+    },
     { 'tpope/vim-fugitive', },                                          -- Git
     { 'tpope/vim-sleuth', },                                            -- Keeps indenation style
     { 'folke/which-key.nvim',                opts = {} },               -- Mappings cheatsheet
