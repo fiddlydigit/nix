@@ -39,7 +39,6 @@
     };
     initExtra = ''
       export PATH="$HOME/.local/kitty.app/bin:$PATH"
-      eval "$(starship init zsh)"
     '';
     envExtra = ''
       . "$HOME/.cargo/env"
