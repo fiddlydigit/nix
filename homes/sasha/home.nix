@@ -27,6 +27,7 @@ in
     unzip
     fzf
     ripgrep
+    broot
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ]; 
   programs = {
