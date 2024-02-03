@@ -1,3 +1,4 @@
+{ user, ...}:
 {
 dconf.settings = {
   "org/gnome/settings-daemon/plugins/media-keys" = {
@@ -7,8 +8,8 @@ dconf.settings = {
   };
   "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
     binding = "<super>t";
-    command = "gnome-terminal nixGLIntel alacritty";
-    name = "open-terminal";
+    command = "/home/${user}/.nix-profile/bin/nixGLIntel_alacritty.sh";
+    name = "open-alacritty";
   };
 };
 }

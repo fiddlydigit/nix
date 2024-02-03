@@ -1,13 +1,13 @@
 { config, self, pkgs, ... }:
 
 let
+  user = "fiddlydigits";
 in
 
 {
   imports = [ 
     ../../programs
-    ./shortcuts.nix
-    #./scripts/alaunch_alacritty.nix
+    (import ./shortcuts.nix { inherit user; })
   ];
   home.file = import ./dotfiles.nix;
   home.sessionVariables = {
