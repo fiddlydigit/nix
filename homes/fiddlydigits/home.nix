@@ -9,6 +9,7 @@ in
     ./shortcuts.nix
   ];
   home.file = import ../../programs/dotfiles.nix;
+  home.file."/home/fiddlydigits" = import ../scripts/alacritty_launcher.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
   };

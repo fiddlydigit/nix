@@ -7,7 +7,7 @@ dconf.settings = {
   };
   "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
     binding = "<super>t";
-    command = "nixGLIntel alacritty";
+    command = "gnome-terminal nixGLIntel alacritty";
     name = "open-terminal";
   };
 };
