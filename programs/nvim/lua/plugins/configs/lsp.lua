@@ -35,6 +35,7 @@ end
 -- Enable the following language servers
 local servers = {
   rust_analyzer = {},
+  nil_ls = {},
   omnisharp = {
     enable_roslyn_analysers = true,
     enable_import_completion = true,

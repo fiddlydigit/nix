@@ -6,11 +6,11 @@ in
 {
   imports = [ 
     ../../programs
+    ./shortcuts.nix
   ];
   home.file = import ../../programs/dotfiles.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
-    SHELL = "zsh";
   };
   home.username = "fiddlydigits";
   home.homeDirectory = "/home/fiddlydigits";
@@ -31,7 +31,7 @@ in
     alacritty
 
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-    nixgl
+    nixgl.nixGLIntel
   ]; 
   
   programs = {
