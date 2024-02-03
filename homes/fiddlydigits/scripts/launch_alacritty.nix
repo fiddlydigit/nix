@@ -1,7 +1,8 @@
 { pkgs, ... }:
 
 let
-  testmyass = pkgs.writeShellScriptBin "launch_alacritty.sh" builtins.readFile ./launch_alacritty.sh;
+  ttt = builtins.readFile ./launch_alacritty.sh;
+  testmyass = pkgs.writeShellScriptBin "launch_alacritty.sh" ttt;
 in {
   home.packages = [testmyass];
 }

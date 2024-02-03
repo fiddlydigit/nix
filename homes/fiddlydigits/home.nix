@@ -7,7 +7,7 @@ in
   imports = [ 
     ../../programs
     ./shortcuts.nix
-    ./scripts/launch_alacritty.nix
+    ./scripts/alaunch_alacritty.nix
   ];
   home.file = import ./dotfiles.nix;
   home.sessionVariables = {
