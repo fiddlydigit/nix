@@ -14,7 +14,8 @@ in
   };
   home.username = "fiddlydigits";
   home.homeDirectory = "/home/fiddlydigits";
-  home.stateVersion = "23.11"; # Please read the comment before changing.
+  home.stateVersion = "23.11";
+  fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     obsidian
     lazygit
@@ -27,7 +28,10 @@ in
     fzf
     ripgrep
     broot
+    alacritty
+
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    nixgl
   ]; 
   
   programs = {
