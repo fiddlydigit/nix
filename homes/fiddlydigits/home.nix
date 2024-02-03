@@ -8,8 +8,7 @@ in
     ../../programs
     ./shortcuts.nix
   ];
-  home.file = import ../../programs/dotfiles.nix;
-  home.file."./launch_alacritty.sh" = import ../scripts/launch_alacritty.nix;
+  home.file = import ./dotfiles.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
   };
