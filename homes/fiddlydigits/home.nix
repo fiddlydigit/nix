@@ -7,6 +7,7 @@ in
 {
   imports = [ 
     ../../programs
+    ./scripts/launch_alacritty.nix
     (import ./shortcuts.nix { inherit user; })
   ];
   home.file = import ./dotfiles.nix;
