@@ -5,7 +5,7 @@ in
 
 {
   imports = [ 
-    ../programs
+    ../../programs
   ];
   home.file = import ../../programs/dotfiles.nix;
   home.sessionVariables = {
