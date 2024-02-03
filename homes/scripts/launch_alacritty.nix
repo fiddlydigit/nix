@@ -6,5 +6,5 @@
         # Dont forget to add in home.nix
         nixGLIntel alacritty
         exit
-    "
+    ";
 }
