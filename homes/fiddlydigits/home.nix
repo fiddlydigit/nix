@@ -6,9 +6,8 @@ in
 {
   imports = [ 
     ../programs
-    ../gnome/shortcuts.nix
   ];
-  home.file = import ../programs/dotfiles.nix;
+  home.file = import ../../programs/dotfiles.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
     SHELL = "zsh";
@@ -27,8 +26,15 @@ in
     unzip
     fzf
     ripgrep
+    broot
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ]; 
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
+  
+  programs = {
+    
+    # Let Home Manager install and manage itself.
+    home-manager.enable = true;
+    
+    git = import ./git.nix;
+  };
 }

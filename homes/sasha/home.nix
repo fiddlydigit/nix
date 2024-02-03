@@ -31,6 +31,7 @@ in
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ]; 
   programs = {
+  
     # Let Home Manager install and manage itself.
     home-manager.enable = true;
     
