@@ -4,7 +4,7 @@
   userName = "fiddlydigits";
   userEmail = "fiddlydigit@gmail.com";
   extraConfig = {
-    core = { sshCommand = "ssh -i ~/.ssh/ssh_msi"; };
+    core = { sshCommand = "ssh -i ~/.ssh/ssh_fiddle"; };
   };
 
   # Work ssh
