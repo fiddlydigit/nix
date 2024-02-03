@@ -1,10 +1,6 @@
-{
-    # For other controllers: https://github.com/nix-community/nixGL
-    # Dont forget to add in home.nix
-    text = "
-        #!/bin/bash
-        # Dont forget to add in home.nix
-        nixGLIntel alacritty
-        exit
-    ";
-}
+{ pkgs, ... }:
+
+(pkgs.writeShellScriptBin "launch_alacritty.sh" ''
+  #!/usr/bin/env bash
+  echo "works"
+'')

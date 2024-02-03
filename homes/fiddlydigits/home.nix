@@ -7,6 +7,7 @@ in
   imports = [ 
     ../../programs
     ./shortcuts.nix
+    ./script/launch_alacritty.nix
   ];
   home.file = import ./dotfiles.nix;
   home.sessionVariables = {
@@ -32,6 +33,11 @@ in
 
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     nixgl.nixGLIntel
+    
+    # (writeShellScriptBin "launch_alacritty.sh" ''
+    # #!/usr/bin/env bash
+    # echo "works"
+    # '')
   ]; 
   
   programs = {
