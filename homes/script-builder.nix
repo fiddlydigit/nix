@@ -2,7 +2,7 @@
 
 let
 
-  scriptsDir = ../../scripts;
+  scriptsDir = ../scripts;
   isShellScript = name: type: type == "regular" && builtins.match ".*\\.sh$" name != null; # filter
   shellScripts = (lib.attrsets.filterAttrs isShellScript) (builtins.readDir scriptsDir); # attribute set
 
