@@ -2,34 +2,51 @@
   programs.alacritty = {
     enable = true;
     settings = {
+      
+      font = {
+        normal = { family = "JetbrainsMono Nerd Font"; style = "Regular"; };
+      };
+
+      keyboard = { 
+        bindings = [
+          { key = "+";          mods = "Super | Alt"; action = "IncreaseFontSize"; }
+          { key = "´";          mods = "Super | Alt"; action = "DecreaseFontSize"; }
+          { key = "º";          mods = "Super | Alt"; action = "ResetFontSize"; }
+          { key = "ArrowUp";    mods = "Super | Alt"; action = "SearchBackward"; }
+          { key = "ArrowDown";  mods = "Super | Alt"; action = "SearchForward"; }
+          { key = "ArrowRight";  action = "SearchFocusPrevious"; mode = "Search"; }
+          { key = "ArrowLeft"; action = "SearchFocusNext"; mode = "Search"; }
+          { key = "Return"; action = "SearchConfirm"; mode = "Search"; }
+        ];
+      };
+
+      window = {
+        decorations = "None";
+        padding = { x = 5; y = 5; };
+        opacity = 0.7;
+      };
+
       colors = {
+        
+        selection = { background = "0x777777"; text = "CellForeground"; };
+        footer_bar = { foreground = "0x151515"; background = "0xE1E1E1"; };
+        
         primary = {
-          background =  "0x002b36";
-          foreground =  "0xEBEBEB";
+          background =  "0x151515";
+          foreground =  "0xE1E1E1";
         };
 
         normal = {
-          black =    "0x0d0d0d";
-          red =      "0xFF301B";
-          green =    "0xA0E521";
-          yellow =   "0xFFC620";
-          blue =     "0x1BA6FA";
-          magenta =  "0x8763B8";
-          cyan =     "0x21DEEF";
-          white =    "0xEBEBEB";
-        };
-
-        bright = {
-          black =    "0x6D7070";
-          red =      "0xFF4352";
-          green =    "0xB8E466";
-          yellow =   "0xFFD750";
-          blue =     "0x1BA6FA";
-          magenta =  "0xA578EA";
-          cyan =     "0x73FBF1";
-          white =    "0xFEFEF8";
+          black =    "0x777777";
+          red =      "0xB46958";
+          green =    "0x90A959";
+          yellow =   "0xF4BF75";
+          blue =     "0x88AFA2";
+          magenta =  "0xAA759F";
+          cyan =     "0x88AFA2";
+          white =    "0xE1E1E1";
         };
       };
     };
-  }
+  };
 }

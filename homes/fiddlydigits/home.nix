@@ -21,15 +21,15 @@ in
   home.packages = with pkgs; [
     obsidian
     lazygit
-    ranger
-    xclip
+    ranger # Files
+    broot # Files
+    xclip 
     zip
     neofetch
     neovim
     unzip
-    fzf
-    ripgrep
-    broot
+    fzf # Search
+    ripgrep # Search
 
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # GL fix, launch apps with script
@@ -42,5 +42,6 @@ in
     home-manager.enable = true;
     
     git = import ./git.nix;
+    bash = import ./bash.nix;
   };
 }
