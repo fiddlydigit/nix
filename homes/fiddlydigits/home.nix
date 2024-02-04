@@ -19,22 +19,23 @@ in
   home.stateVersion = "23.11";
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
+    # General
     obsidian
     lazygit
-    ranger # Files
-    broot # Files
     xclip 
     zip
     neofetch
     neovim
     unzip
-    fzf # Search
-    ripgrep # Search
-
+    # File navigation
+    ranger
+    broot
+    fzf
+    ripgrep
+    # Fonts
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # GL fix, launch apps with script
     nixgl.nixGLIntel
-    
   ]; 
   
   programs = {
