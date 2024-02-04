@@ -4,7 +4,7 @@
   userName = "fiddlydigits";
   userEmail = "fiddlydigit@gmail.com";
   extraConfig = {
-    core = { sshCommand = "ssh -i ~/.ssh/ssh_msi"; };
+    core = { sshCommand = "ssh -i ~/.ssh/ssh_sasha"; };
   };
 
   # Work ssh
@@ -12,7 +12,7 @@
     {
       contents = {
         user = { email = "alexandr.baranovschi@coreflux.org"; };
-        core = { sshCommand = "ssh -i ~/.ssh/id_ed25519_gitlab"; };
+        core = { sshCommand = "ssh -i ~/.ssh/sasha_work"; };
       };
       condition = "gitdir:~/Coreflux/";
     }

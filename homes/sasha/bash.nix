@@ -12,6 +12,8 @@
     la = "ls -A";
     l = "ls -CF";
     rebuild = "home-manager switch --flake /home/$(whoami)/Github/nix#$(whoami)";
+    mqtt = "/home/$(whoami)/Apps/MQTTExplorer.AppImage";
+    coreflux = "/home/$(whoami)/Apps/broker/CorefluxCentral";
     # git
     g = "git";
     lg = "lazygit";
