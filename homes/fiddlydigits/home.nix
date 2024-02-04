@@ -7,10 +7,10 @@ in
 {
   imports = [ 
     ../../programs
-    ./scripts/launch_alacritty.nix
+    ../scripts/launch_alacritty.nix
     (import ./shortcuts.nix { inherit user; })
   ];
-  home.file = import ./dotfiles.nix;
+  home.file = import ../dotfiles.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
   };
