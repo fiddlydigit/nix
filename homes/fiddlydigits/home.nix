@@ -6,8 +6,8 @@ in
 
 {
   imports = [ 
-    ../../programs
-    ../scripts/scripts-builder.nix
+    ../../packages
+    ../scripts/script-builder.nix
     (import ./shortcuts.nix { inherit user; })
   ];
   home.file = import ../dotfiles.nix;

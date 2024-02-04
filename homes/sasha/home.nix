@@ -5,10 +5,10 @@ in
 
 {
   imports = [ 
-    ../../programs
+    ../../packages
     ../../gnome/shortcuts.nix
   ];
-  home.file = import ../../programs/dotfiles.nix;
+  home.file = import ../dotfiles.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
     SHELL = "zsh";
