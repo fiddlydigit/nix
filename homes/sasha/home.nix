@@ -14,11 +14,11 @@ in
   home.sessionVariables = {
     EDITOR = "nvim";
   };
-  home.username = "sasha";
-  home.homeDirectory = "/home/sasha";
+  home.username = user;
+  home.homeDirectory = "/home/${user}";
   home.stateVersion = "23.11"; # Please read the comment before changing.
   home.packages = with pkgs; [
-     # General
+    # General
     obsidian
     lazygit
     xclip 
@@ -26,6 +26,7 @@ in
     neofetch
     neovim
     unzip
+    chromium
     # File navigation
     ranger
     broot
@@ -35,6 +36,7 @@ in
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # GL fix, launch apps with script
     nixgl.nixGLIntel
+
   ]; 
   programs = {
     # Let Home Manager install and manage itself.
