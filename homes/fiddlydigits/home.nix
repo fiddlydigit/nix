@@ -27,6 +27,9 @@ in
     neofetch
     neovim
     unzip
+    # Waybar
+    mpd # Music daemon
+    pavucontrol # Mixer GUI
     # File navigation
     ranger
     broot
