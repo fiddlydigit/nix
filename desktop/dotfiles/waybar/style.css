@@ -80,6 +80,7 @@ tooltip label {
 #tray,
 #cpu,
 #memory,
+#custom-chatgpt,
 #backlight {
     background: #262626;
     opacity: 0.8;
@@ -111,6 +112,11 @@ tooltip label {
 }
 
 #memory {
+    color: #E1E1E1;
+    padding-right: 0px;
+}
+
+#custom-chatgpt {
     color: #E1E1E1;
     padding-right: 10px;
 }

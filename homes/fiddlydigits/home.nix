@@ -39,6 +39,7 @@ in
     broot # File navigation
     
     ## General
+    qutebrowser
     obsidian
     lazygit
     neofetch
