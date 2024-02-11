@@ -22,7 +22,7 @@ in
     # Install with package manager
     ## wlogout # Logout menu
     ## waylock # Lock screen
-    mako # Notifications
+    ## mako # Notifications
     # System
     htop # Task manager
     zip
