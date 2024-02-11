@@ -6,6 +6,5 @@
     ./zsh.nix
     ./starship.nix
     ./alacritty.nix
-    ./flameshot.nix
   ];
 }
