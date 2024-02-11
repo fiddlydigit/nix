@@ -6,6 +6,7 @@ in
 
 {
   imports = [ 
+    ../../services
     ../../packages
     ../script-builder.nix
     (import ../shortcuts.nix { inherit user; })
