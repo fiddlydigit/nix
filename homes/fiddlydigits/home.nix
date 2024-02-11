@@ -19,20 +19,26 @@ in
   home.stateVersion = "23.11";
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
-    # General
-    obsidian
-    lazygit
-    xclip 
+    # System
+    wlogout # Logout menu
+    wlock # Lock menu
+    htop # Task manager
     zip
-    neofetch
-    neovim
     unzip
+    xclip 
     pavucontrol # Mixer GUI
+    bluetuith # Bluetooth
     wofi # App launcher
     ranger # File navigation
     broot # File navigation
+    # General
+    obsidian
+    lazygit
+    neofetch
+    neovim
     fzf
     ripgrep
+    mqttui
     # Fonts
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     # GL fix, launch apps with script

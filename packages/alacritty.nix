@@ -23,7 +23,7 @@
       window = {
         decorations = "None";
         padding = { x = 5; y = 5; };
-        opacity = 0.8;
+        opacity = 0.7;
       };
 
       colors = {

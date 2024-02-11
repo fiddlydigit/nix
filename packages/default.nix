@@ -7,5 +7,6 @@
     ./starship.nix
     ./alacritty.nix
     ./wofi.nix
+    ./swaylock.nix
   ];
 }

@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  home.file."./.config/nvim/" = {
+  home.file."./.config/wofi/" = {
     source = ./dotfiles/wofi;
     recursive = true;
   };
