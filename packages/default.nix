@@ -8,5 +8,6 @@
     ./alacritty.nix
     ./wofi.nix
     ./swaylock.nix
+    ./mako.nix
   ];
 }

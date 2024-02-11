@@ -19,9 +19,11 @@ in
   home.stateVersion = "23.11";
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
+    # Install with package manager
+    ## wlogout # Logout menu
+    ## waylock # Lock screen
+    mako # Notifications
     # System
-    wlogout # Logout menu
-    wlock # Lock menu
     htop # Task manager
     zip
     unzip
