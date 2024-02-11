@@ -27,12 +27,10 @@ in
     neofetch
     neovim
     unzip
-    # Waybar
-    mpd # Music daemon
     pavucontrol # Mixer GUI
-    # File navigation
-    ranger
-    broot
+    wofi # App launcher
+    ranger # File navigation
+    broot # File navigation
     fzf
     ripgrep
     # Fonts

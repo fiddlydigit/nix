@@ -6,6 +6,6 @@
     ./zsh.nix
     ./starship.nix
     ./alacritty.nix
-    ./mpd.nix
+    ./wofi.nix
   ];
 }
