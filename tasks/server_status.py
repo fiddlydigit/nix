@@ -3,10 +3,10 @@ import time
 from plyer import notification
 
 # Servers to ping
-servers = ["google.com", "sapo.pt"]
+servers = ["dev.content.coreflux.org", "dev.login.coreflux.org", "dev.auth.corefluxx.org", "dev.coreflux.org"]
 
 # Delay between checks (in seconds)
-delay = 300  # 5 minutes
+delay = 10 # 5 minutes
 
 def send_notification(server, status):
     # Define notification type based on status
