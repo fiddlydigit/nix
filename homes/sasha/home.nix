@@ -11,7 +11,7 @@ in
     ../../services
     ../../packages
     ../script-builder.nix
-    (import ../shortcuts.nix { inherit user; })
+ #   (import ../shortcuts.nix { inherit user; })
   ];
   home.file = import ../dotfiles.nix;
   home.sessionVariables = {
