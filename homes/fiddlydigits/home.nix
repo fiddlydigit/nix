@@ -6,7 +6,7 @@ in
 
 {
   imports = [ 
-    ../../desktop
+    ./desktop
     ../../services
     ../../packages
     ../script-builder.nix

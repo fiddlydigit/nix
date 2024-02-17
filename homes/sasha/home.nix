@@ -1,4 +1,3 @@
-
 { config, self, pkgs, ... }:
 
 let
@@ -7,7 +6,7 @@ in
 
 {
   imports = [ 
-    ../../desktop
+    ./desktop
     ../../services
     ../../packages
     ../script-builder.nix
@@ -23,8 +22,8 @@ in
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     ## Install with package manager
-    # waybar # Status bar
-    hyprland # Window manager
+    waybar # Status bar
+    # hyprland # Window manager
     # wlogout # Logout menu
     # waylock # Lock screen
     
@@ -48,6 +47,7 @@ in
     fzf
     ripgrep
     mqttui
+    firefox
     
     # Fonts
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
