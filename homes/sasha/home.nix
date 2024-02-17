@@ -21,11 +21,18 @@ in
   home.stateVersion = "23.11";
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
-    ## Install with package manager
+    ## System & Desktop
+    ## bluez
+    ## bluez-utils
+    pamixer
     waybar # Status bar
+    # hyperctl
     # hyprland # Window manager
     # wlogout # Logout menu
     # waylock # Lock screen
+    grim # Screenshot 
+    slurp # Screenshot region
+    wl-clipboard # Screenshot copy
     
     ## System
     htop # Task manager
