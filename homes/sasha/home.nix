@@ -24,7 +24,7 @@ in
   home.packages = with pkgs; [
     ## Install with package manager
     # waybar # Status bar
-    # hypr # Window manager
+    hyprland # Window manager
     # wlogout # Logout menu
     # waylock # Lock screen
     
