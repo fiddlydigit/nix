@@ -1,3 +1,4 @@
+
 { config, self, pkgs, ... }:
 
 let
@@ -6,6 +7,8 @@ in
 
 {
   imports = [ 
+    ../../desktop
+    ../../services
     ../../packages
     ../script-builder.nix
     (import ../shortcuts.nix { inherit user; })
@@ -14,30 +17,46 @@ in
   home.sessionVariables = {
     EDITOR = "nvim";
   };
-  home.username = user;
-  home.homeDirectory = "/home/${user}";
-  home.stateVersion = "23.11"; # Please read the comment before changing.
+  home.username = "sasha";
+  home.homeDirectory = "/home/sasha";
+  home.stateVersion = "23.11";
+  fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
-    # General
+    ## Install with package manager
+    # waybar # Status bar
+    # hypr # Window manager
+    # wlogout # Logout menu
+    # waylock # Lock screen
+    
+    ## System
+    htop # Task manager
+    zip
+    unzip
+    xclip 
+    pavucontrol # Mixer GUI
+    bluetuith # Bluetooth
+    wofi # App launcher
+    ranger # File navigation
+    broot # File navigation
+    
+    ## General
+    qutebrowser
     obsidian
     lazygit
-    xclip 
-    zip
     neofetch
     neovim
-    unzip
-    chromium
-    # File navigation
-    ranger
-    broot
     fzf
     ripgrep
+    mqttui
+    
     # Fonts
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    
     # GL fix, launch apps with script
     nixgl.nixGLIntel
-
   ]; 
+  
+  ## User specific
   programs = {
     # Let Home Manager install and manage itself.
     home-manager.enable = true;
