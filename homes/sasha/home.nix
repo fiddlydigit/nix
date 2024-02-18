@@ -22,20 +22,26 @@ in
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     ## System & Desktop
+    ## pulseaudio
     ## bluez
     ## bluez-utils
-    pamixer
-    waybar # Status bar
-    # hyperctl
     # hyprland # Window manager
     # wlogout # Logout menu
     # waylock # Lock screen
+    xdg-desktop-portal-hyprland # Lets other applications communicate swiftly with the compositor
+    pamixer # Sound control
+    waybar # Status bar
     grim # Screenshot 
     slurp # Screenshot region
     wl-clipboard # Screenshot copy
-    #
-    nwg-displays
-    wlr-randr
+    nwg-displays # Monitor setup
+    wlr-randr # Monitor setup
+    xfce.thunar # File explorer
+    xfce.xfce4-settings 
+    # Themes and theme setup
+    nwg-look # Customize look
+    juno-theme # Theme
+    swaybg # Sets the wallpaper
     
     ## System
     htop # Task manager
@@ -49,7 +55,6 @@ in
     broot # File navigation
     
     ## General
-    qutebrowser
     obsidian
     lazygit
     neofetch

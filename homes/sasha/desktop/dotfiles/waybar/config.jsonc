@@ -55,7 +55,7 @@
 
     "custom/chatgpt": {
         "format": "󱚠",
-        "on-click": "qutebrowser --target window https://chat.openai.com",
+        "on-click": "firefox -new-window https://chat.openai.com",
         "tooltip": false
     },
     

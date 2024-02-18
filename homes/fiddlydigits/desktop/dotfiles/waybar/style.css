@@ -14,8 +14,8 @@
 window.eDP-1 * { font-size: 10px; }
 
 window#waybar {
-    background-color: red;
-    color: red;
+    background-color: #151515;
+    color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
 }
