@@ -66,10 +66,11 @@
         "format": "<sub>{icon}</sub> {windows}",
         "window-rewrite-default": " ",
         "window-rewrite": {
-            "title<.*youtube.*>": " ", // Windows whose titles contain "youtube"
-            "class<firefox>": " ", // Windows whose classes are "firefox"
-            "class<firefox> title<.*github.*>": " ", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
-            "kitty": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
+            "title<.*youtube.*>": " ", 
+            "class<firefox>": " ", 
+            "class<firefox> title<.*github.*>": "",
+            "class<firefox> title<.*gitlab.*>": "",
+            "alacritty": "",
             "code": "󰨞",
 	},
         "format-icons": {
@@ -112,7 +113,7 @@
 	"tooltip-format": "{device_alias}",
 	"tooltip-format-connected": " {device_enumerate}",
 	"tooltip-format-enumerate-connected": "{device_alias}",
-        "on-click-right": "alacritty -e bash -c bluetuith",
+        "on-click-right": "nixGLIntel alacritty -e bash -c bluetuith",
     },
 
     "pulseaudio": {

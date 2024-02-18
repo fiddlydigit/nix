@@ -21,14 +21,18 @@ in
   home.stateVersion = "23.11";
   fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
+    
+    ##
     ## System & Desktop
-    ## pulseaudio
-    ## bluez
-    ## bluez-utils
-    # hyprland # Window manager
-    # wlogout # Logout menu
-    # waylock # Lock screen
-    xdg-desktop-portal-hyprland # Lets other applications communicate swiftly with the compositor
+    ##
+
+    ## pulseaudio -> Audio driver
+    ## bluez -> Bluetooth driver
+    ## bluez-utils -> Bluetooth
+    ## hyprland -> Window manager
+    ## swaylock-effects -> Lock screen
+    wlogout # -> Logout menu
+    xdg-desktop-portal-hyprland # Let other applications communicate swiftly with the compositor
     pamixer # Sound control
     waybar # Status bar
     grim # Screenshot 
@@ -38,12 +42,14 @@ in
     wlr-randr # Monitor setup
     xfce.thunar # File explorer
     xfce.xfce4-settings 
-    # Themes and theme setup
     nwg-look # Customize look
     juno-theme # Theme
     swaybg # Sets the wallpaper
+
     
-    ## System
+    ##
+    ## CLI tools
+    ##
     htop # Task manager
     zip
     unzip
@@ -54,7 +60,10 @@ in
     ranger # File navigation
     broot # File navigation
     
+    ##
     ## General
+    ##
+    vscode
     obsidian
     lazygit
     neofetch
@@ -64,11 +73,11 @@ in
     mqttui
     firefox
     
-    # Fonts
+    ##
+    ## Fixes & Misc
+    ##
     (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-    
-    # GL fix, launch apps with script
-    nixgl.nixGLIntel
+    nixgl.nixGLIntel # GL fix
   ]; 
   
   ## User specific
