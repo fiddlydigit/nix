@@ -2,7 +2,7 @@
 
 {
   home.file."./.config/" = {
-    source = "./dotfiles/mimeapps";
+    source = ./dotfiles/dot-config;
     recursive = true;
   };
 }
