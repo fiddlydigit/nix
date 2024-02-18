@@ -45,8 +45,9 @@ in
     nwg-look # Customize look
     juno-theme # Theme
     swaybg # Sets the wallpaper
+    wofi # App launcher
+    tofi # App launcher
 
-    
     ##
     ## CLI tools
     ##
@@ -56,7 +57,6 @@ in
     xclip 
     pavucontrol # Mixer GUI
     bluetuith # Bluetooth
-    wofi # App launcher
     ranger # File navigation
     broot # File navigation
     
