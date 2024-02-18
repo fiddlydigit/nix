@@ -33,6 +33,9 @@ in
     grim # Screenshot 
     slurp # Screenshot region
     wl-clipboard # Screenshot copy
+    #
+    nwg-displays
+    wlr-randr
     
     ## System
     htop # Task manager
