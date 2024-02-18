@@ -7,5 +7,6 @@
     ./wlogout.nix
     ./waybar.nix
     ./hypr.nix
+    ./default-apps.nix
   ];
 }
