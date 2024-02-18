@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  home.file."./.config/tofi/" = {
+  home.file."./.config/tofi" = {
     source = ./dotfiles/tofi;
     recursive = true;
   };
