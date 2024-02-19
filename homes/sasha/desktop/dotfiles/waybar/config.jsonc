@@ -12,7 +12,7 @@
     // "height": 20, // Makes it dynamic
     "modules-left": ["clock","temperature","cpu","memory","custom/chatgpt"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["network","custom/power_profile","battery","bluetooth","pulseaudio","pulseaudio#microphone","tray"],
+    "modules-right": ["network","custom/power_profile","battery","bluetooth","pulseaudio","pulseaudio#microphone", "backlight", "tray"],
     
     "hyprland/window": {
         "format": "  {}",
@@ -29,7 +29,7 @@
         "interval": 60,
         "format": "{:%H:%M}",
         "max-length": 25
-    }
+    },
 
     "temperature": {
         "thermal-zone": 1,
@@ -143,6 +143,15 @@
         "on-scroll-up": "pamixer --default-source -i 5",
         "on-scroll-down": "pamixer --default-source -d 5",
         "scroll-step": 5
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6
     },
     
     "tray": {

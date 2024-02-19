@@ -47,6 +47,7 @@ in
     juno-theme # Theme
     swaybg # Sets the wallpaper
     tofi # App launcher
+    brightnessctl # Brightness control
 
     ##
     ## CLI tools
@@ -72,7 +73,6 @@ in
     obsidian
     fzf
     ripgrep
-    firefox
     sqlite
 
     ##
