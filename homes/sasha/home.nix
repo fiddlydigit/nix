@@ -62,6 +62,7 @@ in
     bluetuith # Bluetooth
     ranger # File navigation
     broot # File navigation
+    twingate # Remote access to work
     
     ##
     ## General
@@ -71,7 +72,8 @@ in
     fzf
     ripgrep
     firefox
-    
+    sqlite
+
     ##
     ## Fixes & Misc
     ##
