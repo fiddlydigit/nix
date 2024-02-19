@@ -45,7 +45,6 @@ in
     nwg-look # Customize look
     juno-theme # Theme
     swaybg # Sets the wallpaper
-    wofi # App launcher
     tofi # App launcher
 
     ##
@@ -53,8 +52,12 @@ in
     ##
     htop # Task manager
     zip
+    neovim
+    neofetch
     unzip
+    lazygit
     xclip 
+    mqttui
     pavucontrol # Mixer GUI
     bluetuith # Bluetooth
     ranger # File navigation
@@ -65,12 +68,8 @@ in
     ##
     vscode
     obsidian
-    lazygit
-    neofetch
-    neovim
     fzf
     ripgrep
-    mqttui
     firefox
     
     ##
