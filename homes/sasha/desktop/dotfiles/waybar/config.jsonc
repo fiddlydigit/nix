@@ -26,10 +26,10 @@
 
     // Modules-left
     "clock": {
-        "format": "{: %I:%M %p}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "tooltip": true
-    },
+        "interval": 60,
+        "format": "{:%H:%M}",
+        "max-length": 25
+    }
 
     "temperature": {
         "thermal-zone": 1,
@@ -66,11 +66,10 @@
         "format": "<sub>{icon}</sub> {windows}",
         "window-rewrite-default": " ",
         "window-rewrite": {
-            "title<.*youtube.*>": " ", 
-            "class<firefox>": " ", 
-            "class<firefox> title<.*github.*>": "",
-            "class<firefox> title<.*gitlab.*>": "",
-            "alacritty": "",
+            "title<.*youtube.*>": " ", // Windows whose titles contain "youtube"
+            "class<firefox>": " ", // Windows whose classes are "firefox"
+            "class<firefox> title<.*github.*>": " ", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
+            "kitty": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
             "code": "󰨞",
 	},
         "format-icons": {
