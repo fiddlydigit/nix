@@ -65,7 +65,6 @@ in
     ranger # File navigation
     broot # File navigation
     twingate # Remote access to work
-    warp-terminal
     
     ##
     ## General

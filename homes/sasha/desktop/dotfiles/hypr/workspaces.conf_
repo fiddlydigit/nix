@@ -7,11 +7,3 @@
 # workspace=5,monitor:desc:ASUSTek COMPUTER INC VG279QL1A 0x0001A58C,default:true
 # workspace=6,monitor:desc:ASUSTek COMPUTER INC VG279QL1A 0x0001A58C
 # workspace=7,monitor:desc:ASUSTek COMPUTER INC VG279QL1A 0x0001A58C
-
-
-# workspace=1,monitor:desc:Chimei Innolux Corporation 0x1615,default:true
-# workspace=2,monitor:desc:Chimei Innolux Corporation 0x1615
-# workspace=3,monitor:desc:Chimei Innolux Corporation 0x1615
-# workspace=4,monitor:desc:Dell Inc. DELL P2722H 1X920P3,default:true
-# workspace=5,monitor:desc:Dell Inc. DELL P2722H 1X920P3
-# workspace=6,monitor:desc:Dell Inc. DELL P2722H 1X920P3
