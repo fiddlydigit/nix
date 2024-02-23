@@ -58,6 +58,7 @@ tooltip label {
 #workspaces button:hover {
     background: transparent;
     color: #88AFA2;
+    border-radius: 0px;
 }
 
 #workspaces {
@@ -144,7 +145,12 @@ tooltip label {
 
 #pulseaudio.microphone {
     color: #E1E1E1;
-    margin-right: 5px;
+    margin-right: 0px;
+}
+
+#backlight {
+    color: #E1E1E1;
+    margin-right: 5px
 }
 
 /* Not always there */

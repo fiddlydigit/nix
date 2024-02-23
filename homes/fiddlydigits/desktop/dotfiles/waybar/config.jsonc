@@ -12,7 +12,7 @@
     // "height": 20, // Makes it dynamic
     "modules-left": ["clock","temperature","cpu","memory","custom/chatgpt"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["network","custom/power_profile","battery","bluetooth","pulseaudio","pulseaudio#microphone","tray"],
+    "modules-right": ["network","custom/power_profile","battery","bluetooth","pulseaudio","pulseaudio#microphone", "backlight", "tray"],
     
     "hyprland/window": {
         "format": "  {}",
@@ -26,9 +26,9 @@
 
     // Modules-left
     "clock": {
-        "format": "{: %I:%M %p}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "tooltip": true
+        "interval": 60,
+        "format": "{:%H:%M}",
+        "max-length": 25
     },
 
     "temperature": {
@@ -55,7 +55,7 @@
 
     "custom/chatgpt": {
         "format": "󱚠",
-        "on-click": "qutebrowser --target window https://chat.openai.com",
+        "on-click": "firefox -new-window https://chat.openai.com",
         "tooltip": false
     },
     
@@ -66,10 +66,13 @@
         "format": "<sub>{icon}</sub> {windows}",
         "window-rewrite-default": " ",
         "window-rewrite": {
-            "title<.*youtube.*>": " ", // Windows whose titles contain "youtube"
-            "class<firefox>": " ", // Windows whose classes are "firefox"
-            "class<firefox> title<.*github.*>": " ", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
-            "kitty": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
+            "title<.*youtube.*>": " ", 
+            "class<firefox>": " ", 
+            "class<firefox> title<.*github.*>": "",
+            "class<firefox> title<.*spotify.*>": "",
+            "class<firefox> title<.*whatsapp.*>": "", 
+            "Alacritty": "",
+            "MQTT-Explorer": "mqtt", 
             "code": "󰨞",
 	},
         "format-icons": {
@@ -112,7 +115,7 @@
 	"tooltip-format": "{device_alias}",
 	"tooltip-format-connected": " {device_enumerate}",
 	"tooltip-format-enumerate-connected": "{device_alias}",
-        "on-click-right": "alacritty -e bash -c bluetuith",
+        "on-click-right": "nixGLIntel alacritty -e bash -c bluetuith",
     },
 
     "pulseaudio": {
@@ -143,6 +146,15 @@
         "on-scroll-up": "pamixer --default-source -i 5",
         "on-scroll-down": "pamixer --default-source -d 5",
         "scroll-step": 5
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞", "󰃟", "󰃠"],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6
     },
     
     "tray": {
