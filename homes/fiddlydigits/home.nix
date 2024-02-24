@@ -7,11 +7,11 @@ in
 {
   imports = [ 
     ./desktop
-    ../../services
-    ../../packages
+    ../../home-services
+    ../../home-packages
     ../script-builder.nix
   ];
-  home.file = import ../dotfiles.nix;
+  home.file = import ../../dotfiles.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
   };
