@@ -7,10 +7,10 @@ in
 {
   imports = [ 
     ./desktop
-    ../../services
-    ../../packages
+    ../../home-services
+    ../../home-packages
+    ../../home-dotfiles
     ../script-builder.nix
- #   (import ../shortcuts.nix { inherit user; })
   ];
   home.file = import ../dotfiles.nix;
   home.sessionVariables = {
@@ -63,7 +63,6 @@ in
     pavucontrol # Mixer GUI
     bluetuith # Bluetooth
     ranger # File navigation
-    broot # File navigation
     twingate # Remote access to work
     
     ##
