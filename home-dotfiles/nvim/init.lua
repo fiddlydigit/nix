@@ -15,6 +15,11 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    },
     { 'tpope/vim-fugitive', },                                          -- Git
     { 'tpope/vim-sleuth', },                                            -- Keeps indenation style
     { 'folke/which-key.nvim',                opts = {} },               -- Mappings cheatsheet
