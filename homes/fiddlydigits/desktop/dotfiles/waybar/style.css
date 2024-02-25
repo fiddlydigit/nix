@@ -82,6 +82,7 @@ tooltip label {
 #cpu,
 #memory,
 #custom-chatgpt,
+#custom-rjzavchina,
 #backlight {
     background: #262626;
     opacity: 0.8;
@@ -117,10 +118,17 @@ tooltip label {
     padding-right: 0px;
 }
 
+#custom-rjzavchina {
+    color: #E1E1E1;
+    padding-right: 0px;
+}
+
 #custom-chatgpt {
     color: #E1E1E1;
     padding-right: 10px;
 }
+
+
 
 /* Modules right */
 #network {
