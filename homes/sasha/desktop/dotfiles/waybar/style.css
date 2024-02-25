@@ -81,6 +81,7 @@ tooltip label {
 #tray,
 #cpu,
 #memory,
+#disk,
 #custom-chatgpt,
 #backlight {
     background: #262626;
@@ -113,6 +114,11 @@ tooltip label {
 }
 
 #memory {
+    color: #E1E1E1;
+    padding-right: 0px;
+}
+
+#disk {
     color: #E1E1E1;
     padding-right: 0px;
 }

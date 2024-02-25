@@ -12,7 +12,7 @@ in
     ../../home-dotfiles
     ../script-builder.nix
   ];
-  # home.file = import ../../dotfiles.nix;
+  home.file = import ../dotfiles.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
   };
