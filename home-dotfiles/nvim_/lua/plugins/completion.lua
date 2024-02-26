@@ -1,5 +1,4 @@
 return {
-
   'hrsh7th/nvim-cmp',
   dependencies = {
     'L3MON4D3/LuaSnip',             -- Snippet Engine & its associated nvim-cmp source
