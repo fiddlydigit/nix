@@ -14,6 +14,7 @@ local options = {
   timeoutlen = 300,
   completeopt = 'menuone,noselect',
   termguicolors = true,
+  cursorline = true,
   --
   tabstop = 4,
   softtabstop = 4,
