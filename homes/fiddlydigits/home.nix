@@ -9,7 +9,7 @@ in
     ./desktop
     ../../home-services
     ../../home-packages
-    ../../home-dotfiles
+    ../../home-dotfiles-test
     ../script-builder.nix
   ];
   home.file = import ../dotfiles.nix;
