@@ -12,7 +12,6 @@ in
     ../../home-dotfiles-test
     ../script-builder.nix
   ];
-  home.file = import ../dotfiles.nix;
   home.sessionVariables = {
     EDITOR = "nvim";
   };
