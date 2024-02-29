@@ -20,6 +20,25 @@ require('lazy').setup({
     { 'folke/which-key.nvim',                opts = {} },               -- Mappings cheatsheet
     { 'numToStr/Comment.nvim',               opts = {} },               -- Comments
     { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} }, -- Indenation
+    {
+        "folke/todo-comments.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        opts = {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+            search = {
+                command = "rg",
+                args = {
+                    "--color=never",
+                    "--no-heading",
+                    "--with-filename",
+                    "--line-number",
+                    "--column",
+                }
+            }
+    	}
+    },
     --
     { import = 'plugins' },
 
