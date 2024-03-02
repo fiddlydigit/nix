@@ -9,7 +9,7 @@ in
     ./desktop
     ../../home-services
     ../../home-packages
-    ../../home-dotfiles-sasha
+    ../../home-dotfiles
     ../script-builder.nix
   ];
   home.sessionVariables = {

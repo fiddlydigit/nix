@@ -18,7 +18,7 @@ return {
     end
 
     local servers = {
-      rust_analyzer = {},
+      -- rust_analyzer = {},
       nil_ls = {},
       omnisharp = {
         enable_roslyn_analysers = true,

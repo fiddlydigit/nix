@@ -12,7 +12,9 @@ local TERM = os.getenv("TERM")
 nnoremap("<space>", "<nop>")
 vnoremap("<space>", "<nop>")
 
------------ Normal ------------------------
+--------.
+-- Normal
+---------
 
 -- Press 'U' for redo
 nnoremap("U", "<C-r>")
@@ -23,7 +25,7 @@ nnoremap("<leader>q", "<cmd>q<cr>", { silent = false })
 -- Save and Quit with leader key
 nnoremap("<leader>z", "<cmd>wq<cr>", { silent = false })
 
------------ Navigation (Normal) ------------
+-- Navigation
 
 nnoremap('k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 nnoremap('j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
@@ -54,7 +56,7 @@ end)
 nnoremap("L", "$")
 nnoremap("H", "^")
 
------------ Diagnostics (Normal) ----------
+-- Diagnostics
 
 nnoremap('<leader>dl', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 

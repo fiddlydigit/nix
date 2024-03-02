@@ -7,7 +7,6 @@ return {
     harpoon:setup()
     vim.keymap.set("n", "<leader>ha", function() harpoon:list():append() end, { desc = 'Add mark' })
     vim.keymap.set("n", "<leader>hd", function() harpoon:list():remove() end, { desc = 'Remove mark' })
-    -- vim.keymap.set("n", "<leader>he", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
 
     vim.keymap.set("n", "<leader>h1", function() harpoon:list():select(1) end, { desc = 'Go to 1' })
     vim.keymap.set("n", "<leader>h2", function() harpoon:list():select(2) end, { desc = 'Go to 2' })
