@@ -18,7 +18,7 @@ in
   home.username = "fiddlydigits";
   home.homeDirectory = "/home/fiddlydigits";
   home.stateVersion = "23.11";
-  fonts.fontconfig.enable = true;
+  #fonts.fontconfig.enable = true;
   home.packages = with pkgs; [
     
     ##
