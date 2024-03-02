@@ -73,6 +73,7 @@ in
     fzf
     ripgrep
     sqlite
+    netcoredbg
 
     ##
     ## Fixes & Misc

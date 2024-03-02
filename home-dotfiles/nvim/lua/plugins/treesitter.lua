@@ -8,6 +8,9 @@ return {
         ensure_installed = {
           'c',
           'cpp',
+          'bash',
+          'markdown',
+          'css',
           'go',
           'lua',
           'python',
@@ -23,6 +26,8 @@ return {
         },
 
         auto_install = true,
+        autotag = { enable = true },
+        autopairs = { enable = true },
         highlight = { enable = true },
         indent = { enable = true },
         incremental_selection = {
