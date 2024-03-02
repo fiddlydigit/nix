@@ -67,6 +67,7 @@ in
     ##
     ## General
     ##
+    git
     vscode
     obsidian
     fzf
