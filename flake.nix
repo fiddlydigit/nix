@@ -35,7 +35,7 @@
         "fiddlydigits" = home-manager.lib.homeManagerConfiguration {
           
           inherit pkgs;
-          modules = [ ./homes/fiddlydigits/home.nix ];
+          modules = [ ./homes/rossi/home.nix ];
 
           # Optionally use extraSpecialArgs
           # to pass through arguments to home.nix
