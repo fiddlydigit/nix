@@ -53,24 +53,25 @@ in
     ##
     htop # Task manager
     zip
-    neovim
     neofetch
     unzip
     lazygit
     xclip 
-    mqttui
     pavucontrol # Mixer GUI
     bluetuith # Bluetooth
     ranger # File navigation
     
     ##
-    ## General
+    ## Work
     ##
+    mqttui
     vscode
+    neovim
     obsidian
     fzf
     ripgrep
     sqlite
+    yarn
 
     ##
     ## Fixes & Misc
