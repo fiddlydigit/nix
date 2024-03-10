@@ -45,25 +45,25 @@ tooltip label {
 
 #workspaces button.focused {
     color: #a6adc8;
-    background: #eba0ac;
-    border-radius: 10px;
+    background: transparent;
+    border-radius: 0px;
 }
 
 #workspaces button.urgent {
-    color: #11111b;
-    background: #a6e3a1;
-    border-radius: 10px;
+    color: #b46958;
+    background: transparent;
 }
 
 #workspaces button:hover {
+    color: #BAD7FF;
     background: transparent;
-    color: #88AFA2;
-    border-radius: 0px;
+    box-shadow: none;
+    text-shadow: none; 
+    border-color: transparent;
 }
 
 #workspaces {
     background: #1e1e2e;
-    border-radius: 5px;
     margin-left: 10px;
     padding-right: 0px;
     padding-left: 5px;
@@ -85,11 +85,10 @@ tooltip label {
 #custom-chatgpt,
 #backlight {
     background: #262626;
-    opacity: 0.8;
+    opacity: 1;
     padding: 0px 5px;
     margin: 5px 5px;
-    border: 0px solid #181825;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 /* Modules left */
