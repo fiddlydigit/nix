@@ -138,4 +138,5 @@ complete -f -F _dotnet_bash_complete dotnet
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR=nvim
+eval "$(zoxide init bash)"
 eval "$(starship init bash)"
