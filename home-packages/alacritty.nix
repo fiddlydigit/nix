@@ -5,6 +5,8 @@
       
       font = {
         normal = { family = "JetbrainsMono Nerd Font"; style = "Regular"; };
+        italic = { family = "JetbrainsMono Nerd Font"; style = "Italic"; };
+        bold = { family = "JetbrainsMono Nerd Font"; style = "Bold"; };
       };
 
       keyboard = { 

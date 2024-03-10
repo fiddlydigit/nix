@@ -14,7 +14,7 @@
         user = { email = "alexandr.baranovschi@coreflux.org"; };
         core = { sshCommand = "ssh -i ~/.ssh/sasha_work"; };
       };
-      condition = "gitdir:~/Coreflux/";
+      condition = "gitdir:~/coreflux/";
     }
   ];
 }

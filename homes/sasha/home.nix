@@ -25,13 +25,6 @@ in
     ## System & Desktop
     ##
 
-    ## pulseaudio -> Audio driver
-    ## bluez -> Bluetooth driver
-    ## bluez-utils -> Bluetooth
-    ## bluedevil
-    ## waybar # Status bar
-    ## hyprland -> Window manager
-    ## swaylock-effects -> Lock screen
     wlogout # -> Logout menu
     xdg-desktop-portal-hyprland # Let other applications communicate swiftly with the compositor
     pamixer # Sound control
