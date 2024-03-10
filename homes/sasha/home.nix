@@ -34,9 +34,8 @@ in
     nwg-displays # Monitor setup
     wlr-randr # Monitor setup
     xfce.thunar # File explorer
-    xfce.xfce4-settings 
     nwg-look # Customize look
-    juno-theme # Theme
+    fluent-gtk-theme # theme
     swaybg # Sets the wallpaper
     tofi # App launcher
     brightnessctl # Brightness control
