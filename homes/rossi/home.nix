@@ -63,6 +63,7 @@ in
     bluetuith # Bluetooth
     ranger # File navigation
     twingate # Remote access to work
+    helix
     
     ##
     ## General

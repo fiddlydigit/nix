@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "position": "top",
+    "position": "bottom",
     "margin-top": 3,
     "margin-bottom": 3,
     "margin-left": 5,
@@ -10,7 +10,7 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     // "height": 20, // Makes it dynamic
-    "modules-left": ["clock","temperature","cpu","memory","custom/rjzavchina","custom/chatgpt"],
+    "modules-left": ["clock","temperature","cpu","memory","disk","custom/chatgpt"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["network","custom/power_profile","battery","bluetooth","pulseaudio","pulseaudio#microphone", "backlight", "tray"],
     
@@ -53,22 +53,19 @@
         "tooltip": false
     },
 
+    "disk": {
+        "interval": 30,
+        "format": "󰋊 {percentage_free}% free ",
+        "path": "/"
+    },
+
     "custom/chatgpt": {
-        "format": "󱚠 ",
+        "format": "󱚠",
         "on-click": "firefox -new-window https://chat.openai.com",
         "tooltip": false
     },
     
-    "custom/rjzavchina": {
-        "exec": "/home/fiddlydigits/Github/rjzhavchina-mqtt/target/release/mqtt-client --config /home/fiddlydigits/Apps/rjzavchina/config.toml",
-        "format": "{}",
-        "return-type": "json",
-        "tooltip": true
-    },
-
-    
     // Modules-center
-
     "hyprland/workspaces": {
         "active-only": false,
         "all-outputs": true,
