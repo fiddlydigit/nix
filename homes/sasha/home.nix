@@ -52,7 +52,8 @@ in
     pavucontrol # Mixer GUI
     bluetuith # Bluetooth
     ranger # File navigation
-    zoxide
+    zoxide # Smart file navigation
+    helix # File editor
 
     ##
     ## Work
