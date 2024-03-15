@@ -54,6 +54,7 @@ in
     ranger # File navigation
     zoxide # Smart file navigation
     helix # File editor
+    qbittorrent
 
     ##
     ## Work
