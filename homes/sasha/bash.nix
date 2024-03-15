@@ -15,10 +15,10 @@
     mqtt = "/home/$(whoami)/Apps/MQTTExplorer.AppImage";
     coreflux = "/home/$(whoami)/Apps/broker/CorefluxCentral";
     # ssh
-    do-rita = "ssh -i ~/.ssh/sasha_d_ocean root@165.22.42.237";
+    do-rita = "ssh -i ~/.ssh/sasha_d_ocean root@192.168.100.5";
     do-backend = "ssh -i ~/.ssh/sasha_d_ocean root@192.168.100.4";
-    do-frontend = "ssh -i ~/.ssh/sasha_d_ocean root@138.197.105.237";
-    do-downloads = "ssh -i ~/.ssh/sasha_d_ocean root@167.172.243.66";
+    do-frontend = "ssh -i ~/.ssh/sasha_d_ocean root@192.168.100.6";
+    do-downloads = "ssh -i ~/.ssh/sasha_d_ocean root@192.168.100.7";
     # git
     g = "git";
     lg = "lazygit";
