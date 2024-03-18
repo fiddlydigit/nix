@@ -13,7 +13,8 @@
     l = "ls -CF";
     rebuild = "home-manager switch --flake /home/$(whoami)/github/nix#$(whoami)";
     mqtt = "/home/$(whoami)/Apps/MQTTExplorer.AppImage";
-    coreflux = "/home/$(whoami)/Apps/broker/CorefluxCentral";
+    cfbroker = "/home/$(whoami)/Apps/broker/CorefluxCentral";
+    cfhub = "/home/$(whoami)/Apps/CorefluxHub";
     # ssh
     do-rita = "ssh -i ~/.ssh/sasha_d_ocean root@192.168.100.5";
     do-backend = "ssh -i ~/.ssh/sasha_d_ocean root@192.168.100.4";
