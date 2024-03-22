@@ -67,6 +67,7 @@ in
     ripgrep
     sqlite
     yarn
+    nixos-generators
 
     ##
     ## Fixes & Misc
