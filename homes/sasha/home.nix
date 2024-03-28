@@ -55,6 +55,7 @@ in
     zoxide # Smart file navigation
     helix # File editor
     qbittorrent
+    gnome.gnome-boxes
 
     ##
     ## Work
